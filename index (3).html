@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PEST PRO SOLUTION | Government Licensed Pest Control &amp; Hygiene Solutions | Vadodara, Gujarat</title>
+<meta name="description" content="PEST PRO SOLUTION - ISO 9001:2015 Certified, Government Licensed Pest Control Company in Vadodara, Gujarat. Pest Management, Bird Proofing & Hygiene Solutions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0A2A5E;
+    --navy-deep:#061A3F;
+    --navy-soft:#12386f;
+    --green:#13B34B;
+    --green-deep:#0C8A39;
+    --forest:#0B2F20;
+    --forest-deep:#071F15;
+    --white:#FFFFFF;
+    --grey:#F7F8FA;
+    --grey-line:#E7EAF0;
+    --gold:#D4AF37;
+    --gold-soft:#E9CE84;
+    --gold-deep:#B4892A;
+    --ink:#1B2430;
+    --ink-soft:#5B677A;
+    --shadow-sm: 0 2px 10px rgba(10,42,94,0.06);
+    --shadow-md: 0 12px 32px rgba(10,42,94,0.10);
+    --shadow-lg: 0 28px 70px rgba(10,42,94,0.16);
+    --radius: 18px;
+    --ease: cubic-bezier(.22,1,.36,1);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Plus Jakarta Sans', sans-serif;
+    color:var(--ink);
+    background:var(--white);
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4{
+    font-family:'Playfair Display', serif;
+    margin:0;
+    color:var(--navy);
+    letter-spacing:-0.01em;
+  }
+  p{margin:0;}
+  a{text-decoration:none;color:inherit;}
+  ul{margin:0;padding:0;list-style:none;}
+  img{max-width:100%;display:block;}
+  button{font-family:inherit;cursor:pointer;border:none;background:none;}
+  .container{max-width:1240px;margin:0 auto;padding:0 28px;}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:10px;
+    font-size:12.5px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;
+    color:var(--green-deep);
+    margin-bottom:18px;
+  }
+  .eyebrow::before{
+    content:"";width:28px;height:2px;background:var(--gold);display:inline-block;
+  }
+  .section-head{max-width:680px;margin-bottom:56px;}
+  .section-head.center{margin-left:auto;margin-right:auto;text-align:center;}
+  .section-head h2{font-size:clamp(30px,4vw,44px);line-height:1.15;font-weight:700;}
+  .section-head .desc{margin-top:16px;font-size:16.5px;line-height:1.7;color:var(--ink-soft);}
+  section{position:relative;}
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease), transform .8s var(--ease);}
+  .reveal.in{opacity:1;transform:translateY(0);}
+  ::selection{background:var(--green);color:#fff;}
+
+  /* ===== SCROLL PROGRESS ===== */
+  .scroll-bar{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--green),var(--gold));z-index:9999;width:0%;transition:width .1s linear;}
+
+  /* ===== HEADER ===== */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:1000;
+    background:rgba(255,255,255,0.85);
+    backdrop-filter:blur(14px) saturate(160%);
+    -webkit-backdrop-filter:blur(14px) saturate(160%);
+    border-bottom:1px solid rgba(10,42,94,0.06);
+    transition:box-shadow .3s var(--ease), background .3s var(--ease);
+  }
+  header.scrolled{box-shadow:0 6px 24px rgba(10,42,94,0.08);}
+  .nav-wrap{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:12px 28px;max-width:1240px;margin:0 auto;
+  }
+  .brand{display:flex;align-items:center;gap:12px;}
+  .brand .logo-box{
+    width:52px;height:52px;flex:0 0 52px;
+    border-radius:12px;overflow:hidden;
+    background:#fff;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:var(--shadow-sm);
+  }
+  .brand .logo-box img{width:100%;height:100%;object-fit:contain;}
+  .brand-text{display:flex;flex-direction:column;line-height:1.15;}
+  .brand-text .name{font-family:'Playfair Display',serif;font-weight:700;font-size:19px;color:var(--navy);letter-spacing:0.01em;}
+  .brand-text .tag{font-size:10.5px;letter-spacing:0.06em;color:var(--green-deep);font-weight:600;margin-top:2px;}
+  nav.main-nav{display:flex;align-items:center;gap:34px;}
+  nav.main-nav a{
+    font-size:14.5px;font-weight:600;color:var(--navy);
+    position:relative;padding:6px 0;
+  }
+  nav.main-nav a::after{
+    content:"";position:absolute;left:0;bottom:0;width:0%;height:2px;background:var(--green);
+    transition:width .3s var(--ease);
+  }
+  nav.main-nav a:hover::after{width:100%;}
+  .header-cta{display:flex;align-items:center;gap:12px;}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:13px 26px;border-radius:100px;font-weight:700;font-size:14.5px;
+    transition:transform .35s var(--ease), box-shadow .35s var(--ease), background .3s var(--ease);
+    white-space:nowrap;
+  }
+  .btn-primary{
+    background:linear-gradient(135deg,var(--green) 0%, var(--green-deep) 100%);
+    color:#fff;box-shadow:0 10px 24px rgba(19,179,75,0.30);
+  }
+  .btn-primary:hover{transform:translateY(-3px);box-shadow:0 16px 32px rgba(19,179,75,0.38);}
+  .btn-outline{
+    background:transparent;color:var(--navy);border:1.6px solid var(--navy);
+  }
+  .btn-outline:hover{background:var(--navy);color:#fff;transform:translateY(-3px);}
+  .btn-gold{
+    background:linear-gradient(135deg,var(--gold-soft),var(--gold) 60%, var(--gold-deep));
+    color:var(--forest-deep);box-shadow:0 10px 24px rgba(212,175,55,0.32);
+  }
+  .btn-gold:hover{transform:translateY(-3px);box-shadow:0 16px 32px rgba(212,175,55,0.42);}
+  .btn-sm{padding:10px 20px;font-size:13.5px;}
+  .menu-toggle{display:none;flex-direction:column;gap:5px;padding:8px;}
+  .menu-toggle span{width:24px;height:2.4px;background:var(--navy);border-radius:2px;transition:.3s;}
+
+  /* ===== HERO ===== */
+  .hero{
+    padding:168px 0 110px;
+    background:
+      radial-gradient(1100px 520px at 82% -8%, rgba(19,179,75,0.10), transparent 60%),
+      radial-gradient(900px 480px at -6% 18%, rgba(10,42,94,0.07), transparent 55%),
+      linear-gradient(180deg,#ffffff 0%, #fbfcfd 60%, var(--grey) 100%);
+    position:relative;overflow:hidden;
+  }
+  .hex-field{position:absolute;inset:0;pointer-events:none;opacity:0.5;}
+  .hero-grid{
+    display:grid;grid-template-columns:1.08fr 0.92fr;gap:60px;align-items:center;position:relative;z-index:2;
+  }
+  .badge-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px;}
+  .pill{
+    display:inline-flex;align-items:center;gap:8px;
+    background:#fff;border:1px solid var(--grey-line);
+    padding:8px 16px 8px 10px;border-radius:100px;font-size:12.5px;font-weight:700;color:var(--navy);
+    box-shadow:var(--shadow-sm);
+  }
+  .pill .dot-hex{
+    width:20px;height:20px;flex:0 0 20px;
+    clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background:linear-gradient(135deg,var(--green),var(--green-deep));
+    display:flex;align-items:center;justify-content:center;
+  }
+  .pill .dot-hex svg{width:11px;height:11px;}
+  .hero h1{
+    font-size:clamp(38px,5.1vw,58px);line-height:1.08;font-weight:700;
+    margin-bottom:22px;
+  }
+  .hero h1 em{font-style:italic;color:var(--green-deep);}
+  .hero .lede{
+    font-size:17.5px;line-height:1.75;color:var(--ink-soft);max-width:560px;margin-bottom:20px;
+  }
+  .hero .sub-strap{
+    font-size:15px;font-weight:600;color:var(--navy-soft);margin-bottom:36px;
+    display:flex;align-items:center;gap:10px;
+  }
+  .hero .sub-strap::before{content:"";width:34px;height:1.5px;background:var(--gold);}
+  .hero-cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:44px;}
+  .hero-stats{display:flex;gap:34px;flex-wrap:wrap;}
+  .hero-stats .stat b{
+    font-family:'Playfair Display',serif;font-size:30px;color:var(--navy);display:block;font-weight:700;
+  }
+  .hero-stats .stat span{font-size:13px;color:var(--ink-soft);font-weight:600;}
+
+  .hero-visual{position:relative;}
+  .hero-card{
+    background:#fff;border-radius:26px;padding:34px;
+    box-shadow:var(--shadow-lg);
+    border:1px solid var(--grey-line);
+    position:relative;overflow:hidden;
+  }
+  .hero-card::before{
+    content:"";position:absolute;top:-70px;right:-70px;width:220px;height:220px;
+    background:radial-gradient(circle,rgba(19,179,75,0.16),transparent 70%);
+  }
+  .hero-logo-stage{
+    display:flex;align-items:center;justify-content:center;
+    padding:22px;background:linear-gradient(160deg,#ffffff, var(--grey));
+    border-radius:20px;margin-bottom:18px;border:1px solid var(--grey-line);
+  }
+  .hero-logo-stage img{width:100%;max-width:190px;height:auto;}
+  .field-photos{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:18px;position:relative;z-index:2;}
+  .field-photo{
+    position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/3;border:1px solid var(--grey-line);
+    box-shadow:var(--shadow-sm);
+  }
+  .field-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s var(--ease);}
+  .field-photo:hover img{transform:scale(1.06);}
+  .field-photo .cap{
+    position:absolute;left:0;right:0;bottom:0;padding:8px 10px;
+    background:linear-gradient(0deg, rgba(6,26,63,0.82), transparent);
+    color:#fff;font-size:10.5px;font-weight:700;letter-spacing:.02em;
+  }
+  .cert-row{display:flex;gap:12px;}
+  .cert-tile{
+    flex:1;background:var(--grey);border-radius:14px;padding:16px 14px;text-align:center;
+    border:1px solid var(--grey-line);
+  }
+  .cert-tile .num{font-family:'Playfair Display',serif;font-weight:700;color:var(--navy);font-size:20px;}
+  .cert-tile .lbl{font-size:11px;color:var(--ink-soft);font-weight:600;margin-top:4px;letter-spacing:.02em;}
+  .float-badge{
+    position:absolute;bottom:-22px;left:-22px;
+    background:linear-gradient(135deg,var(--navy),var(--navy-deep));
+    color:#fff;padding:16px 22px;border-radius:16px;box-shadow:var(--shadow-md);
+    display:flex;align-items:center;gap:12px;
+  }
+  .float-badge .hexicon{
+    width:38px;height:38px;flex:0 0 38px;
+    clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background:linear-gradient(135deg,var(--gold-soft),var(--gold));
+    display:flex;align-items:center;justify-content:center;
+  }
+  .float-badge b{display:block;font-size:14px;font-family:'Playfair Display',serif;}
+  .float-badge span{font-size:11px;opacity:.85;}
+
+  /* ===== TRUST STRIP ===== */
+  .trust-strip{
+    background:var(--navy);padding:22px 0;
+  }
+  .trust-strip .container{
+    display:flex;align-items:center;justify-content:center;gap:44px;flex-wrap:wrap;
+  }
+  .trust-item{display:flex;align-items:center;gap:10px;color:#fff;font-size:13.5px;font-weight:600;letter-spacing:0.02em;opacity:.92;}
+  .trust-item svg{flex:0 0 auto;}
+
+  /* ===== ABOUT ===== */
+  .about{padding:120px 0;background:#fff;}
+  .about-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:70px;align-items:flex-start;}
+  .about-visual{position:sticky;top:120px;}
+  .about-panel{
+    background:linear-gradient(155deg,var(--navy) 0%, var(--navy-deep) 100%);
+    border-radius:24px;padding:44px 34px;color:#fff;position:relative;overflow:hidden;
+    box-shadow:var(--shadow-lg);
+  }
+  .about-panel::after{
+    content:"";position:absolute;width:340px;height:340px;
+    clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    border:1px solid rgba(255,255,255,0.08);
+    right:-140px;bottom:-140px;
+  }
+  .about-panel .logo-chip{
+    width:76px;height:76px;background:#fff;border-radius:16px;display:flex;align-items:center;justify-content:center;padding:10px;margin-bottom:26px;
+    box-shadow:0 10px 24px rgba(0,0,0,0.25);
+  }
+  .about-panel h3{color:#fff;font-size:24px;margin-bottom:14px;}
+  .about-panel p{color:rgba(255,255,255,0.78);font-size:14.5px;line-height:1.75;margin-bottom:22px;}
+  .about-panel .addr-line{
+    display:flex;gap:10px;align-items:flex-start;font-size:13px;color:rgba(255,255,255,0.72);
+    line-height:1.6;padding-top:18px;border-top:1px solid rgba(255,255,255,0.12);position:relative;z-index:2;
+  }
+  .about-panel .addr-line svg{flex:0 0 auto;margin-top:2px;}
+  .value-tags{display:flex;flex-wrap:wrap;gap:9px;position:relative;z-index:2;margin-bottom:20px;}
+  .value-tags span{
+    font-size:11.5px;font-weight:700;letter-spacing:0.03em;
+    background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.16);
+    padding:7px 13px;border-radius:100px;color:var(--gold-soft);
+  }
+  .about-copy p{font-size:16px;line-height:1.85;color:var(--ink-soft);margin-bottom:20px;}
+  .about-copy strong{color:var(--navy);font-weight:700;}
+  .about-copy .lead-line{font-size:19px;color:var(--navy);font-weight:600;line-height:1.6;margin-bottom:24px;font-family:'Playfair Display',serif;font-style:italic;}
+  .sector-strip{
+    display:flex;flex-wrap:wrap;gap:10px;margin-top:30px;
+  }
+  .sector-chip{
+    font-size:12.5px;font-weight:600;color:var(--navy);
+    background:var(--grey);border:1px solid var(--grey-line);
+    padding:9px 15px;border-radius:10px;
+  }
+
+  /* ===== SERVICES ===== */
+  .services{padding:120px 0;background:var(--grey);position:relative;}
+  .service-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:22px;
+  }
+  .service-card{
+    background:#fff;border-radius:18px;padding:30px 24px;
+    border:1px solid var(--grey-line);
+    transition:transform .4s var(--ease), box-shadow .4s var(--ease), border-color .4s var(--ease);
+    position:relative;
+  }
+  .service-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-md);border-color:transparent;}
+  .service-icon{
+    width:54px;height:54px;
+    clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background:linear-gradient(135deg, rgba(19,179,75,0.14), rgba(10,42,94,0.10));
+    display:flex;align-items:center;justify-content:center;margin-bottom:18px;
+    transition:background .4s var(--ease);
+  }
+  .service-card:hover .service-icon{background:linear-gradient(135deg,var(--green),var(--green-deep));}
+  .service-card:hover .service-icon svg path, .service-card:hover .service-icon svg circle, .service-card:hover .service-icon svg rect{stroke:#fff;}
+  .service-icon svg{width:26px;height:26px;}
+  .service-card h4{font-size:16.5px;font-weight:700;color:var(--navy);margin-bottom:8px;line-height:1.35;font-family:'Plus Jakarta Sans',sans-serif;}
+  .service-card p{font-size:13px;color:var(--ink-soft);line-height:1.6;}
+  .service-card .amc-flag{
+    position:absolute;top:16px;right:16px;background:var(--gold);color:#fff;font-size:9.5px;font-weight:800;
+    padding:4px 9px;border-radius:100px;letter-spacing:.04em;
+  }
+
+  /* ===== PRODUCTS ===== */
+  .products{padding:120px 0;background:#fff;}
+  .product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+  .product-card{
+    border-radius:18px;padding:26px 22px;background:linear-gradient(160deg,#fff,var(--grey));
+    border:1px solid var(--grey-line);display:flex;flex-direction:column;gap:14px;
+    transition:transform .4s var(--ease), box-shadow .4s var(--ease);
+  }
+  .product-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);}
+  .product-card .p-icon{
+    width:46px;height:46px;border-radius:12px;background:var(--navy);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .product-card .p-icon svg{width:22px;height:22px;}
+  .product-card h4{font-size:15px;font-weight:700;color:var(--navy);line-height:1.35;}
+
+  /* ===== INDUSTRIES ===== */
+  .industries{padding:120px 0;background:var(--navy);position:relative;overflow:hidden;}
+  .industries::before{
+    content:"";position:absolute;inset:0;
+    background:radial-gradient(700px 400px at 90% 10%, rgba(19,179,75,0.16), transparent 60%);
+  }
+  .industries .section-head h2, .industries .section-head .desc{color:#fff;}
+  .industries .section-head .desc{color:rgba(255,255,255,0.7);}
+  .industries .eyebrow{color:var(--gold-soft);}
+  .industries .eyebrow::before{background:var(--green);}
+  .ind-grid{
+    display:grid;grid-template-columns:repeat(5,1fr);gap:16px;position:relative;z-index:2;
+  }
+  .ind-tile{
+    background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);
+    border-radius:16px;padding:22px 14px;text-align:center;
+    transition:.4s var(--ease);
+  }
+  .ind-tile:hover{background:rgba(255,255,255,0.09);transform:translateY(-5px);border-color:var(--green);}
+  .ind-tile .ind-hex{
+    width:44px;height:44px;margin:0 auto 12px;
+    clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background:linear-gradient(135deg,var(--green),var(--green-deep));
+    display:flex;align-items:center;justify-content:center;
+  }
+  .ind-tile .ind-hex svg{width:20px;height:20px;}
+  .ind-tile span{color:#fff;font-size:12.5px;font-weight:600;line-height:1.35;display:block;}
+
+  /* ===== AUDIT (dark luxury) ===== */
+  .audit{
+    padding:130px 0;background:var(--navy-deep);position:relative;overflow:hidden;
+  }
+  .audit::before{
+    content:"";position:absolute;top:-200px;left:50%;transform:translateX(-50%);
+    width:900px;height:900px;
+    clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    border:1px solid rgba(212,175,55,0.10);
+  }
+  .audit-head{text-align:center;max-width:700px;margin:0 auto 66px;position:relative;z-index:2;}
+  .audit-head .eyebrow{color:var(--gold-soft);justify-content:center;}
+  .audit-head .eyebrow::before{background:var(--gold);}
+  .audit-head h2{color:#fff;font-size:clamp(30px,4vw,44px);}
+  .audit-head p{color:rgba(255,255,255,0.65);margin-top:16px;font-size:16px;line-height:1.7;}
+  .audit-cols{display:grid;grid-template-columns:1fr 1fr;gap:54px;position:relative;z-index:2;}
+  .audit-block h3{
+    color:var(--gold-soft);font-size:14px;letter-spacing:0.1em;text-transform:uppercase;
+    font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;margin-bottom:24px;
+    display:flex;align-items:center;gap:12px;
+  }
+  .audit-block h3::before{content:"";width:22px;height:1.5px;background:var(--gold);}
+  .compliance-chips{display:flex;flex-wrap:wrap;gap:12px;}
+  .compliance-chips span{
+    background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);
+    color:#fff;padding:12px 20px;border-radius:12px;font-weight:700;font-size:13.5px;letter-spacing:.02em;
+    transition:.35s;
+  }
+  .compliance-chips span:hover{border-color:var(--gold);color:var(--gold-soft);background:rgba(212,175,55,0.06);}
+  .doc-list{display:flex;flex-direction:column;gap:0;}
+  .doc-list li{
+    display:flex;align-items:center;gap:14px;padding:14px 0;
+    border-bottom:1px solid rgba(255,255,255,0.08);color:rgba(255,255,255,0.85);font-size:14.5px;font-weight:500;
+  }
+  .doc-list li:last-child{border-bottom:none;}
+  .doc-list li svg{flex:0 0 auto;}
+
+  /* ===== WHY CHOOSE US ===== */
+  .why{padding:120px 0;background:#fff;}
+  .why-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:64px;align-items:center;}
+  .why-list{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .why-item{
+    display:flex;align-items:flex-start;gap:14px;padding:18px;border-radius:14px;
+    background:var(--grey);border:1px solid var(--grey-line);transition:.35s;
+  }
+  .why-item:hover{background:#fff;box-shadow:var(--shadow-md);border-color:transparent;transform:translateY(-3px);}
+  .why-item .check{
+    width:30px;height:30px;flex:0 0 30px;border-radius:9px;background:linear-gradient(135deg,var(--green),var(--green-deep));
+    display:flex;align-items:center;justify-content:center;
+  }
+  .why-item span{font-size:13.5px;font-weight:700;color:var(--navy);line-height:1.4;padding-top:4px;}
+  .why-media{
+    background:linear-gradient(160deg,var(--navy),var(--navy-deep));
+    border-radius:24px;padding:50px 40px;color:#fff;position:relative;overflow:hidden;
+    box-shadow:var(--shadow-lg);
+  }
+  .why-media .quote-mark{font-family:'Playfair Display',serif;font-size:80px;color:var(--gold);line-height:0.6;opacity:.85;}
+  .why-media p{font-family:'Playfair Display',serif;font-style:italic;font-size:22px;line-height:1.6;margin:20px 0 28px;color:#fff;}
+  .why-media .sig{display:flex;align-items:center;gap:14px;}
+  .why-media .sig .line{width:40px;height:2px;background:var(--gold);}
+  .why-media .sig span{font-size:12.5px;font-weight:700;letter-spacing:.04em;color:var(--gold-soft);}
+
+  /* ===== TRUST CTA (deep forest green + gold) ===== */
+  .trust-cta{
+    padding:140px 0;background:linear-gradient(165deg,var(--forest) 0%, var(--forest-deep) 100%);
+    position:relative;overflow:hidden;text-align:center;
+  }
+  .trust-cta::before{
+    content:"";position:absolute;inset:0;
+    background:
+      radial-gradient(600px 400px at 12% 15%, rgba(212,175,55,0.10), transparent 60%),
+      radial-gradient(700px 460px at 88% 85%, rgba(19,179,75,0.14), transparent 60%);
+  }
+  .trust-cta-inner{position:relative;z-index:2;max-width:760px;margin:0 auto;}
+  .trust-cta .eyebrow{color:var(--gold-soft);justify-content:center;}
+  .trust-cta .eyebrow::before{background:var(--gold);}
+  .trust-cta h2{
+    color:#fff;font-size:clamp(34px,5vw,56px);line-height:1.14;font-style:italic;font-weight:600;
+    margin-bottom:26px;
+  }
+  .trust-cta .sub{
+    color:rgba(255,255,255,0.72);font-size:16.5px;line-height:1.8;max-width:560px;margin:0 auto 40px;
+  }
+  .trust-cta .btn-gold{padding:17px 38px;font-size:15.5px;}
+  .trust-cta .mini-row{
+    margin-top:30px;display:flex;justify-content:center;gap:32px;flex-wrap:wrap;
+  }
+  .trust-cta .mini-row .m{color:rgba(255,255,255,0.55);font-size:12.5px;font-weight:600;letter-spacing:.03em;}
+  .trust-cta .mini-row .m b{color:var(--gold-soft);font-family:'Playfair Display',serif;font-size:17px;display:block;font-weight:700;}
+
+  /* ===== CTA / CONTACT ===== */
+  .contact{padding:120px 0 130px;background:var(--grey);position:relative;}
+  .contact-panel{
+    background:linear-gradient(120deg,var(--navy) 0%, var(--navy-soft) 55%, var(--green-deep) 130%);
+    border-radius:28px;padding:64px 60px;position:relative;overflow:hidden;
+    box-shadow:var(--shadow-lg);
+  }
+  .contact-panel::before{
+    content:"";position:absolute;width:520px;height:520px;
+    clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    border:1px solid rgba(255,255,255,0.10);
+    right:-200px;top:-180px;
+  }
+  .contact-panel::after{
+    content:"";position:absolute;width:320px;height:320px;
+    clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    border:1px solid rgba(255,255,255,0.10);
+    left:-120px;bottom:-140px;
+  }
+  .contact-grid{display:grid;grid-template-columns:1.2fr 0.8fr;gap:50px;align-items:center;position:relative;z-index:2;}
+  .contact-panel .eyebrow{color:var(--gold-soft);}
+  .contact-panel .eyebrow::before{background:var(--gold);}
+  .contact-panel h2{color:#fff;font-size:clamp(28px,3.6vw,40px);margin-bottom:18px;line-height:1.2;}
+  .contact-panel p{color:rgba(255,255,255,0.78);font-size:15.5px;line-height:1.75;max-width:520px;}
+  .contact-actions{display:flex;flex-direction:column;gap:14px;}
+  .contact-actions .btn{width:100%;padding:16px 22px;font-size:15px;}
+  .contact-info-row{
+    display:flex;gap:10px;margin-top:14px;color:rgba(255,255,255,0.7);font-size:12.5px;align-items:center;justify-content:center;
+  }
+
+  /* ===== FOOTER ===== */
+  footer{background:var(--navy-deep);padding:80px 0 0;color:rgba(255,255,255,0.7);}
+  .footer-top{display:grid;grid-template-columns:1.3fr 0.9fr 0.9fr 1.1fr;gap:50px;padding-bottom:60px;border-bottom:1px solid rgba(255,255,255,0.08);}
+  .footer-brand{display:flex;align-items:center;gap:12px;margin-bottom:20px;}
+  .footer-brand .logo-box{width:50px;height:50px;background:#fff;border-radius:10px;padding:6px;flex:0 0 50px;}
+  .footer-brand .name{font-family:'Playfair Display',serif;font-weight:700;color:#fff;font-size:18px;}
+  .footer-brand .tag{font-size:11px;color:var(--gold-soft);font-weight:600;margin-top:2px;}
+  .footer-col p.desc{font-size:13.5px;line-height:1.75;color:rgba(255,255,255,0.55);margin-bottom:20px;}
+  .footer-col h5{
+    color:#fff;font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:20px;font-weight:700;
+  }
+  .footer-col ul li{margin-bottom:12px;font-size:13.5px;}
+  .footer-col ul li a{color:rgba(255,255,255,0.6);transition:.3s;}
+  .footer-col ul li a:hover{color:var(--gold-soft);}
+  .footer-contact li{display:flex;gap:10px;align-items:flex-start;color:rgba(255,255,255,0.6);font-size:13px;line-height:1.6;}
+  .footer-contact li svg{flex:0 0 auto;margin-top:3px;}
+  .footer-bottom{
+    display:flex;align-items:center;justify-content:space-between;padding:26px 0;flex-wrap:wrap;gap:14px;
+    font-size:12.5px;color:rgba(255,255,255,0.45);
+  }
+  .footer-bottom .certs{display:flex;gap:16px;flex-wrap:wrap;}
+  .footer-bottom .certs span{color:rgba(255,255,255,0.6);font-weight:600;}
+
+  /* ===== FLOATING WHATSAPP ===== */
+  .wa-float{
+    position:fixed;bottom:26px;right:26px;z-index:900;
+    width:60px;height:60px;border-radius:50%;
+    background:linear-gradient(135deg,#25D366,#128C4A);
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 14px 30px rgba(18,140,74,0.4);
+    animation:pulse-wa 2.6s infinite;
+  }
+  @keyframes pulse-wa{
+    0%{box-shadow:0 14px 30px rgba(18,140,74,0.4),0 0 0 0 rgba(37,211,102,0.5);}
+    70%{box-shadow:0 14px 30px rgba(18,140,74,0.4),0 0 0 16px rgba(37,211,102,0);}
+    100%{box-shadow:0 14px 30px rgba(18,140,74,0.4),0 0 0 0 rgba(37,211,102,0);}
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width:1080px){
+    .service-grid{grid-template-columns:repeat(3,1fr);}
+    .product-grid{grid-template-columns:repeat(3,1fr);}
+    .ind-grid{grid-template-columns:repeat(4,1fr);}
+    .about-grid, .why-grid{grid-template-columns:1fr;}
+    .about-visual{position:static;}
+    .hero-grid{grid-template-columns:1fr;}
+    .hero-visual{max-width:460px;margin:0 auto;}
+  }
+  @media (max-width:860px){
+    nav.main-nav{display:none;}
+    .menu-toggle{display:flex;}
+    .header-cta .btn-outline{display:none;}
+    .service-grid{grid-template-columns:repeat(2,1fr);}
+    .product-grid{grid-template-columns:repeat(2,1fr);}
+    .ind-grid{grid-template-columns:repeat(3,1fr);}
+    .audit-cols{grid-template-columns:1fr;gap:40px;}
+    .contact-grid{grid-template-columns:1fr;}
+    .footer-top{grid-template-columns:1fr 1fr;}
+    .why-list{grid-template-columns:1fr;}
+    .trust-strip .container{gap:20px;}
+    .trust-cta{padding:100px 0;}
+  }
+  @media (max-width:600px){
+    .container{padding:0 20px;}
+    .hero{padding:130px 0 70px;}
+    .hero-cta-row{flex-direction:column;}
+    .hero-cta-row .btn{width:100%;}
+    .hero-stats{gap:24px;}
+    .service-grid, .product-grid{grid-template-columns:1fr 1fr;gap:14px;}
+    .service-card, .product-card{padding:20px 16px;}
+    .ind-grid{grid-template-columns:repeat(2,1fr);}
+    .about{padding:80px 0;}
+    .services, .products, .industries, .audit, .why, .contact{padding:80px 0;}
+    .trust-cta{padding:80px 0;}
+    .contact-panel{padding:40px 26px;}
+    .footer-top{grid-template-columns:1fr;gap:36px;}
+    .footer-bottom{flex-direction:column;text-align:center;}
+    .about-panel{padding:32px 24px;}
+    .why-media{padding:36px 26px;}
+    .float-badge{left:14px;bottom:-18px;padding:12px 16px;}
+    .section-head{margin-bottom:36px;}
+    nav.main-nav{gap:22px;}
+    .field-photos{grid-template-columns:1fr 1fr;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
+  }
+</style>
+</head>
+<body>
+
+<div class="scroll-bar" id="scrollBar"></div>
+
+<!-- ============ HEADER ============ -->
+<header id="siteHeader">
+  <div class="nav-wrap">
+    <a href="#top" class="brand">
+      <div class="logo-box"><img src="data:image/jpeg;base64,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" alt="Pest Pro Solution Logo"></div>
+      <div class="brand-text">
+        <span class="name">PEST PRO SOLUTION</span>
+        <span class="tag">PROTECTING HEALTH · PRESERVING HYGIENE</span>
+      </div>
+    </a>
+    <nav class="main-nav">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#products">Products</a>
+      <a href="#industries">Industries</a>
+      <a href="#audit">Compliance</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a href="tel:+918866058637" class="btn btn-outline btn-sm">Call Now</a>
+      <a href="#contact" class="btn btn-primary btn-sm">Free Inspection</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div id="mobileMenu" style="position:fixed;inset:0;background:var(--navy-deep);z-index:1100;display:none;flex-direction:column;align-items:center;justify-content:center;gap:30px;">
+  <button id="closeMenu" style="position:absolute;top:26px;right:26px;color:#fff;font-size:28px;line-height:1;">&times;</button>
+  <a href="#about" class="mm-link">About</a>
+  <a href="#services" class="mm-link">Services</a>
+  <a href="#products" class="mm-link">Products</a>
+  <a href="#industries" class="mm-link">Industries</a>
+  <a href="#audit" class="mm-link">Compliance</a>
+  <a href="#contact" class="mm-link">Contact</a>
+  <a href="#contact" class="btn btn-gold" style="margin-top:10px;">Request Free Inspection</a>
+</div>
+<style>
+  .mm-link{color:#fff;font-family:'Playfair Display',serif;font-size:26px;font-weight:600;}
+</style>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <svg class="hex-field" width="100%" height="100%" viewBox="0 0 1200 700" preserveAspectRatio="none">
+    <g fill="none" stroke="#0A2A5E" stroke-opacity="0.05" stroke-width="1.4">
+      <polygon points="1080,40 1140,80 1140,150 1080,190 1020,150 1020,80"/>
+      <polygon points="1000,130 1060,170 1060,240 1000,280 940,240 940,170"/>
+      <polygon points="1150,180 1210,220 1210,290 1150,330 1090,290 1090,220"/>
+    </g>
+  </svg>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-copy reveal">
+        <div class="badge-row">
+          <span class="pill"><span class="dot-hex"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Government Licensed Pest Control Company</span>
+          <span class="pill"><span class="dot-hex"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>ISO 9001:2015 Certified</span>
+        </div>
+        <h1>Professional Pest Control Services in <em>Vadodara, Gujarat</em></h1>
+        <p class="sub-strap">Your Trusted Partner for Pest Management, Bird Proofing &amp; Hygiene Solutions</p>
+        <p class="lede">Welcome to PEST PRO SOLUTION — a pest management company built by people who actually show up. Based right here in Vadodara, we handle residential, commercial, industrial, pharmaceutical, food processing, hospitality, healthcare, educational and institutional sites, and we treat a small kitchen with the same seriousness as a full factory floor.</p>
+        <div class="hero-cta-row">
+          <a href="#contact" class="btn btn-primary">Request Free Site Inspection</a>
+          <a href="tel:+918866058637" class="btn btn-outline">Call Now</a>
+          <a href="https://wa.me/918866058637" target="_blank" class="btn btn-gold">WhatsApp Us</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><b>ISO 9001</b><span>Quality Certified</span></div>
+          <div class="stat"><b>Govt.</b><span>Licensed Operator</span></div>
+          <div class="stat"><b>17+</b><span>Pest Categories Managed</span></div>
+          <div class="stat"><b>AMC</b><span>Long-Term Contracts</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-card">
+          <div class="hero-logo-stage">
+            <img src="data:image/jpeg;base64,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" alt="Pest Pro Solution">
+          </div>
+          <div class="field-photos">
+            <div class="field-photo">
+              <img src="https://images.unsplash.com/photo-1691548970765-f8335acd7141?w=400&q=80&auto=format&fit=crop" alt="Technician carrying out a treatment on site">
+              <div class="cap">On-Site Treatment</div>
+            </div>
+            <div class="field-photo">
+              <img src="https://images.unsplash.com/photo-1670989292166-8b20b9530438?w=400&q=80&auto=format&fit=crop" alt="Pest control technician at a property in Vadodara">
+              <div class="cap">Our Field Team</div>
+            </div>
+          </div>
+          <div class="cert-row">
+            <div class="cert-tile"><div class="num">ISO</div><div class="lbl">9001:2015</div></div>
+            <div class="cert-tile"><div class="num">Govt.</div><div class="lbl">Licensed</div></div>
+            <div class="cert-tile"><div class="num">100%</div><div class="lbl">Safe Methods</div></div>
+          </div>
+        </div>
+        <div class="float-badge">
+          <div class="hexicon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.4 6.6L21 10l-5 4.4L17.4 21 12 17.6 6.6 21 8 14.4 3 10l6.6-1.4L12 2z" fill="#0A2A5E"/></svg></div>
+          <div><b>Trusted Across Gujarat</b><span>Vadodara · Anand · Bharuch &amp; more</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<div class="trust-strip">
+  <div class="container">
+    <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2l7 3v6c0 5-3.4 8.7-7 11-3.6-2.3-7-6-7-11V5l7-3z" stroke="#13B34B" stroke-width="1.8"/></svg>Government Licensed</div>
+    <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#13B34B" stroke-width="1.8"/><path d="M8 12l3 3 5-6" stroke="#13B34B" stroke-width="1.8" stroke-linecap="round"/></svg>ISO 9001:2015 Certified</div>
+    <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M2 12h20" stroke="#13B34B" stroke-width="1.8"/></svg>Scientific Pest Management</div>
+    <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#13B34B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Eco-Friendly &amp; Safe Treatments</div>
+    <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="#13B34B" stroke-width="1.8"/></svg>Audit &amp; Documentation Ready</div>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-visual reveal">
+      <div class="about-panel">
+        <div class="logo-chip"><img src="data:image/jpeg;base64,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" alt="Pest Pro Solution" style="width:100%;height:100%;object-fit:contain;"></div>
+        <h3>Backed by Licensing, Not Just Promises</h3>
+        <div class="value-tags">
+          <span>Quality</span><span>Integrity</span><span>Safety</span>
+          <span>Customer Satisfaction</span><span>Operational Excellence</span>
+          <span>Regulatory Compliance</span><span>Sustainable Solutions</span>
+        </div>
+        <p>Every treatment we carry out is backed by government licensing and ISO 9001:2015 certified processes — not just claimed on paper, but followed on the ground by a team that's trained to do it right the first time.</p>
+        <div class="addr-line">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.6 7-11.5A7 7 0 0 0 5 9.5C5 14.4 12 21 12 21z" stroke="#E9CE84" stroke-width="1.6"/><circle cx="12" cy="9.5" r="2.4" stroke="#E9CE84" stroke-width="1.6"/></svg>
+          <span>Office on Waghodia Road, near Parivar Char Rasta, Vadodara — walk-ins are always welcome.</span>
+        </div>
+      </div>
+    </div>
+    <div class="about-copy reveal">
+      <div class="eyebrow">About Pest Pro Solution</div>
+      <h2 style="font-size:clamp(28px,3.6vw,40px);margin-bottom:24px;">A Vadodara Company That Answers the Phone</h2>
+      <p class="lead-line">"No query is too small, and no pest issue too minor" — that's not a tagline we picked for effect, it's genuinely how we schedule our week.</p>
+      <p>PEST PRO SOLUTION is a Government Licensed Pest Control Company based right here in Vadodara, Gujarat. We provide reliable, safe and effective pest control for <strong>Residential, Commercial, Industrial, Pharmaceutical, Food Processing, Hospitality, Healthcare, Educational and Institutional</strong> facilities — and we've built our name on Quality, Integrity, Safety and Operational Excellence rather than on the loudest advertising.</p>
+      <p>With experienced technicians, modern pest management techniques and environmentally responsible treatment methods, we help protect your property from termites, rodents, cockroaches, ants, mosquitoes, flies, bed bugs, birds, stored product insects and other public health pests. Regulatory Compliance isn't an afterthought here — it's the standard every job is measured against, which is exactly why our documentation holds up under audit.</p>
+      <p>Whether you need a one-time treatment or a comprehensive <strong>Annual Maintenance Contract (AMC)</strong>, we deliver customized, Long-Term Protection built around Scientific Pest Management and Sustainable Solutions — keeping your premises clean, safe and genuinely pest-free, visit after visit.</p>
+      <div class="sector-strip">
+        <span class="sector-chip">Residential</span>
+        <span class="sector-chip">Commercial</span>
+        <span class="sector-chip">Industrial</span>
+        <span class="sector-chip">Pharmaceutical</span>
+        <span class="sector-chip">Food Processing</span>
+        <span class="sector-chip">Hospitality</span>
+        <span class="sector-chip">Healthcare</span>
+        <span class="sector-chip">Educational</span>
+        <span class="sector-chip">Institutional</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;">Our Professional Services</div>
+      <h2>Every Pest Problem Has a Right Way to Solve It</h2>
+      <p class="desc">From a one-off cockroach treatment to a factory-wide AMC, each service below is handled by trained technicians using methods matched to the actual pest — not a generic spray-and-go.</p>
+    </div>
+    <div class="service-grid reveal" id="serviceGrid"></div>
+  </div>
+</section>
+
+<!-- ============ PRODUCTS ============ -->
+<section class="products" id="products">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;">Hygiene Products &amp; Equipment</div>
+      <h2>The Equipment Behind a Pest-Free Facility</h2>
+      <p class="desc">Beyond treatments, we supply and install the hygiene equipment that keeps a facility protected between visits — sourced, fitted and serviced by our own team.</p>
+    </div>
+    <div class="product-grid reveal" id="productGrid"></div>
+  </div>
+</section>
+
+<!-- ============ INDUSTRIES ============ -->
+<section class="industries" id="industries">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;">Industries We Serve</div>
+      <h2>Different Buildings, Different Risks</h2>
+      <p class="desc">A hospital ward and a warehouse don't face the same pest pressure — our programs are built around the facility in front of us, not a one-size-fits-all checklist.</p>
+    </div>
+    <div class="ind-grid reveal" id="indGrid"></div>
+  </div>
+</section>
+
+<!-- ============ AUDIT & DOCUMENTATION ============ -->
+<section class="audit" id="audit">
+  <div class="container">
+    <div class="audit-head reveal">
+      <div class="eyebrow">Audit &amp; Documentation</div>
+      <h2>Paperwork That Actually Survives an Audit</h2>
+      <p>Auditors don't want a friendly assurance — they want a paper trail. We build ours so it's ready before the auditor even walks in, supporting compliance with the standards below.</p>
+    </div>
+    <div class="audit-cols">
+      <div class="audit-block reveal">
+        <h3>Compliance Support</h3>
+        <div class="compliance-chips">
+          <span>AIB</span><span>FSSAI</span><span>BRCGS</span><span>ISO 22000</span>
+          <span>HACCP</span><span>GMP</span><span>GHP</span>
+        </div>
+      </div>
+      <div class="audit-block reveal">
+        <h3>Documentation Provided</h3>
+        <ul class="doc-list" id="docList"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US ============ -->
+<section class="why" id="why">
+  <div class="container why-grid">
+    <div class="reveal">
+      <div class="eyebrow">Why Choose Us</div>
+      <h2 style="font-size:clamp(28px,3.6vw,40px);margin-bottom:30px;">Because Compliance Beats Convenience, Every Time</h2>
+      <div class="why-list" id="whyList"></div>
+    </div>
+    <div class="why-media reveal">
+      <span class="quote-mark">&ldquo;</span>
+      <p>Our mission is to provide effective, reliable and sustainable pest management solutions that ensure clean, hygienic and pest-free environments — while protecting public health and supporting our clients' operational excellence.</p>
+      <div class="sig"><div class="line"></div><span>PEST PRO SOLUTION · OUR COMMITMENT</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST CTA (Deep Green + Gold) ============ -->
+<section class="trust-cta">
+  <div class="container trust-cta-inner reveal">
+    <div class="eyebrow">We're Here For You</div>
+    <h2>Here For You, First and Always</h2>
+    <p class="sub">No query is too small, and no pest issue too minor. Whether it's one ant on a kitchen counter or a full-scale AMC for your factory, you'll get the same humble, attentive service — backed by licensed, uncompromising expertise.</p>
+    <a href="tel:+918866058637" class="btn btn-gold">Speak With Our Experts Today</a>
+    <div class="mini-row">
+      <div class="m"><b>24 Hrs</b>Response Window</div>
+      <div class="m"><b>Govt. Licensed</b>Verified Operator</div>
+      <div class="m"><b>ISO 9001</b>Certified Process</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-panel">
+      <div class="contact-grid">
+        <div class="reveal">
+          <div class="eyebrow">Request Free Site Inspection</div>
+          <h2>Need Professional Pest Control Services?</h2>
+          <p>Contact PEST PRO SOLUTION today for a free site inspection and an honest consultation. Our team is ready with customized pest management solutions for your home, office, factory, warehouse, restaurant, hotel, hospital or industrial facility.</p>
+        </div>
+        <div class="contact-actions reveal">
+          <a href="#" class="btn btn-gold">Request Free Site Inspection</a>
+          <a href="tel:+918866058637" class="btn" style="background:#fff;color:var(--navy);">Call Now: +91 88660 58637</a>
+          <a href="https://wa.me/918866058637" target="_blank" class="btn btn-primary">Chat on WhatsApp</a>
+          <div class="contact-info-row">Waghodia Road, Vadodara &nbsp;•&nbsp; Response within 24 hours</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <div class="logo-box"><img src="data:image/jpeg;base64,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" alt="Pest Pro Solution" style="width:100%;height:100%;object-fit:contain;"></div>
+          <div>
+            <div class="name">PEST PRO SOLUTION</div>
+            <div class="tag">Protecting Health, Preserving Hygiene</div>
+          </div>
+        </div>
+        <p class="desc">Government Licensed, ISO 9001:2015 Certified pest control company delivering Pest Control, Bird Proofing and Hygiene Solutions across Gujarat.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#products">Hygiene Products</a></li>
+          <li><a href="#audit">Compliance</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Annual Maintenance Contract</a></li>
+          <li><a href="#services">Anti-Termite Treatment</a></li>
+          <li><a href="#services">Bird Netting &amp; Spikes</a></li>
+          <li><a href="#services">Industrial Pest Control</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Get In Touch</h5>
+        <ul class="footer-contact">
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.6 7-11.5A7 7 0 0 0 5 9.5C5 14.4 12 21 12 21z" stroke="#D4AF37" stroke-width="1.6"/><circle cx="12" cy="9.5" r="2.4" stroke="#D4AF37" stroke-width="1.6"/></svg><span>FF/11, Kanha Dreamland, Savita Hospital Lane, Near Parivar Char Rasta, Waghodia Road, Vadodara, Gujarat – 390025</span></li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z" stroke="#D4AF37" stroke-width="1.6"/></svg><span>+91 88660 58637 (Mobile) &nbsp;·&nbsp; +91 94084 09184 (Office)</span></li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M4 5h16v14H4z" stroke="#D4AF37" stroke-width="1.6"/><path d="M4 6l8 7 8-7" stroke="#D4AF37" stroke-width="1.6"/></svg><span>info@pestprosolution.com</span></li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="#D4AF37" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="#D4AF37" stroke-width="1.6"/><circle cx="17.3" cy="6.7" r="1" fill="#D4AF37"/></svg><span>@pest.prosolution</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Pest Pro Solution. All rights reserved.</span>
+      <div class="certs"><span>Government Licensed</span><span>ISO 9001:2015 Certified</span></div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/918866058637" target="_blank" class="wa-float" aria-label="WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M17.6 6.3A8.9 8.9 0 0 0 12 4a8.9 8.9 0 0 0-7.7 13.4L3 21l3.7-1.3A8.9 8.9 0 0 0 12 20.9a8.9 8.9 0 0 0 5.6-15.6zM12 19.3a7.3 7.3 0 0 1-3.8-1.1l-.3-.2-2.5.8.8-2.4-.2-.3A7.3 7.3 0 1 1 19.3 12 7.3 7.3 0 0 1 12 19.3z" fill="#fff"/><path d="M15.6 13.9c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.7.9-.2.2-.5.1a6 6 0 0 1-1.8-1.1 6.7 6.7 0 0 1-1.2-1.5c-.1-.2 0-.4.1-.5l.3-.4c.1-.1.1-.2.2-.4s0-.3 0-.4-.5-1.2-.7-1.7-.4-.4-.5-.4h-.4a.9.9 0 0 0-.6.3 2.7 2.7 0 0 0-.8 2 4.6 4.6 0 0 0 1 2.5 10.6 10.6 0 0 0 4 3.6c.6.2 1 .4 1.4.5a3.3 3.3 0 0 0 1.5.1 2.5 2.5 0 0 0 1.6-1.1 2 2 0 0 0 .1-1.1c0-.1-.2-.2-.4-.3z" fill="#fff"/></svg>
+</a>
+
+<script>
+  // ---------- Data ----------
+  const services = [
+    {t:"Annual Maintenance Contract (AMC)", d:"Scheduled visits, full documentation and one team that knows your site — the low-maintenance way to stay pest-free all year.", amc:true},
+    {t:"Anti-Termite Treatment", d:"Pre-construction soil treatment or post-construction chemical barriers — done before termites decide the foundation for you.", },
+    {t:"Rodent Control &amp; Monitoring", d:"Bait stations placed with a plan, not scattered — plus exclusion work so rodents can't just walk back in."},
+    {t:"Cockroach Control", d:"Gel baiting and residual treatment targeted at where roaches actually breed, not just where you see them."},
+    {t:"Ant Control", d:"We trace the trail back to the colony instead of just wiping out the ants you can see today."},
+    {t:"Mosquito Control", d:"Fogging, larviciding and breeding-source removal — a public health job, treated like one."},
+    {t:"Fly Control", d:"Traps, baiting and sanitation guidance combined, because flies come back if only one of those is missing."},
+    {t:"Bed Bug Treatment", d:"Heat and chemical protocols designed to catch every hiding spot, not just the mattress seams."},
+    {t:"Bird Netting &amp; Spike Installation", d:"UV-stable netting and humane spike systems for balconies, ledges and warehouse eaves."},
+    {t:"Stored Product Insect (SPI) Management", d:"Protecting grain, flour and packaged stock from the insects that quietly destroy inventory."},
+    {t:"Warehouse &amp; Factory Pest Management", d:"Perimeter defence and stored-product protection built around your actual production schedule."},
+    {t:"Residential Pest Control", d:"Family and pet-conscious treatments for homes and apartments — safe first, always."},
+    {t:"Commercial Pest Control", d:"Discreet, scheduled visits that don't disrupt your customers or your working hours."},
+    {t:"Industrial Pest Control", d:"Heavy-duty programs for manufacturing floors where downtime simply isn't an option."},
+    {t:"Food Industry Pest Management", d:"HACCP-aligned protocols for food handling and processing units, documented every visit."},
+    {t:"Hospital &amp; Healthcare Pest Control", d:"Infection-control conscious methods for wards, kitchens and patient-facing areas."},
+  ];
+  const products = [
+    "SS Fly Catcher Machines","Fly Killer Machines","Philips UV Tubes","Fly Bags",
+    "Fly Glue Boards (Gum Pads)","Rodent Bait Stations","Air Curtains","PVC Strip Curtains",
+    "Soap Dispensers","Automatic Hand Dryers","Other Hygiene &amp; Pest Management Products"
+  ];
+  const industries = [
+    "Food Processing Industries","Pharmaceutical Companies","Hotels &amp; Restaurants","Hospitals &amp; Healthcare Facilities",
+    "Warehouses &amp; Logistics","Manufacturing Industries","Offices &amp; Commercial Buildings","Schools &amp; Colleges",
+    "Residential Apartments &amp; Villas","Retail Stores &amp; Shopping Complexes"
+  ];
+  const docs = [
+    "Pest Sighting Reports","Trend Analysis","Service Reports","Corrective Action Reports (CAPA)",
+    "Pest Management SOPs","Chemical Inventory Records","Safety Data Sheets (SDS)","Training Records","Audit Support Documents"
+  ];
+  const why = [
+    "Government Licensed Pest Control Company","ISO 9001:2015 Certified","Experienced &amp; Trained Technicians","Eco-Friendly &amp; Safe Treatment Methods",
+    "Customized Pest Management Programs","Annual Maintenance Contracts (AMC)","Fast Response &amp; Reliable Service","Complete Audit Documentation Support",
+    "Competitive, Honest Pricing","Professional Customer Support"
+  ];
+
+  const svgHex = `<svg viewBox="0 0 24 24" fill="none"><path d="M12 2v20M2 7l10 5 10-5M2 17l10-5 10 5" stroke="#0A2A5E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+  const svgCheck = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+  const svgDoc = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 2h9l5 5v15H6V2z" stroke="#D4AF37" stroke-width="1.6"/><path d="M9 12h6M9 16h6" stroke="#D4AF37" stroke-width="1.6" stroke-linecap="round"/></svg>`;
+  const svgProduct = `<svg viewBox="0 0 24 24" fill="none"><path d="M4 8l8-5 8 5v9l-8 5-8-5V8z" stroke="#fff" stroke-width="1.6"/></svg>`;
+  const svgIndustry = `<svg viewBox="0 0 24 24" fill="none"><path d="M3 21V9l6 4V9l6 4V5l6 4v12H3z" stroke="#0A2A5E" stroke-width="1.6" stroke-linejoin="round"/></svg>`;
+
+  const serviceGrid = document.getElementById('serviceGrid');
+  services.forEach(s=>{
+    const card = document.createElement('div');
+    card.className = 'service-card';
+    card.innerHTML = `${s.amc ? '<span class="amc-flag">Most Popular</span>' : ''}
+      <div class="service-icon">${svgHex}</div>
+      <h4>${s.t}</h4>
+      <p>${s.d}</p>`;
+    serviceGrid.appendChild(card);
+  });
+
+  const productGrid = document.getElementById('productGrid');
+  products.forEach(p=>{
+    const card = document.createElement('div');
+    card.className = 'product-card';
+    card.innerHTML = `<div class="p-icon">${svgProduct}</div><h4>${p}</h4>`;
+    productGrid.appendChild(card);
+  });
+
+  const indGrid = document.getElementById('indGrid');
+  industries.forEach(i=>{
+    const tile = document.createElement('div');
+    tile.className = 'ind-tile';
+    tile.innerHTML = `<div class="ind-hex">${svgIndustry}</div><span>${i}</span>`;
+    indGrid.appendChild(tile);
+  });
+
+  const docList = document.getElementById('docList');
+  docs.forEach(d=>{
+    const li = document.createElement('li');
+    li.innerHTML = `${svgDoc}<span>${d}</span>`;
+    docList.appendChild(li);
+  });
+
+  const whyList = document.getElementById('whyList');
+  why.forEach(w=>{
+    const item = document.createElement('div');
+    item.className = 'why-item';
+    item.innerHTML = `<div class="check">${svgCheck}</div><span>${w}</span>`;
+    whyList.appendChild(item);
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // ---------- Header scroll state ----------
+  const header = document.getElementById('siteHeader');
+  const scrollBar = document.getElementById('scrollBar');
+  window.addEventListener('scroll', ()=>{
+    header.classList.toggle('scrolled', window.scrollY > 12);
+    const h = document.documentElement.scrollHeight - window.innerHeight;
+    scrollBar.style.width = (window.scrollY / h * 100) + '%';
+  });
+
+  // ---------- Mobile menu ----------
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const closeMenu = document.getElementById('closeMenu');
+  menuToggle.addEventListener('click', ()=>{ mobileMenu.style.display = 'flex'; });
+  closeMenu.addEventListener('click', ()=>{ mobileMenu.style.display = 'none'; });
+  document.querySelectorAll('#mobileMenu a').forEach(a=>{
+    a.addEventListener('click', ()=>{ mobileMenu.style.display = 'none'; });
+  });
+
+  // ---------- Reveal on scroll ----------
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold:0.12});
+  revealEls.forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
